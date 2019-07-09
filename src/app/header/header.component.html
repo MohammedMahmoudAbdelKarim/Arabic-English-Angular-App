@@ -1,0 +1,76 @@
+<section id="contact" class="py-3">
+    <div class="container">
+        <div class="container-fluid">
+            <div class="row align-items-baseline">
+                <div class="col-6 row">
+                    <div class="col-md-6">
+                        <i class="fas fa-phone mr-2"></i>
+                        <span>+386 40 111 555</span>
+                    </div>
+                    <div class="col-md-6">
+                        <i class="far fa-envelope mr-2"></i>
+                        <span>email@domin.com</span>
+                    </div>
+                </div>
+                <div class="col-6 d-flex justify-content-lg-end">
+                    <i class="fab fa-facebook-f mr-3"></i>
+                    <i class="fab fa-twitter mr-3"></i>
+                    <i class="fab fa-linkedin-in mr-3"></i>
+                    <i class="fab fa-google-plus-g mr-3"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<nav class="navbar navbar-expand-lg pt-3">
+    <div class="container">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-2 col-md-12 col-lg-2 col-sm-12 d-flex align-items-baseline justify-content-between">
+                    <a class="navbar-brand" href="#"><img src="assets/img/logo.png" class="img-fluid w-50" alt=""></a>
+                    <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle
+                            navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="col-xl-10 col-lg-10 col-md-12 d-flex ml-auto col-sm-12">
+                    <div class="collapse navbar-collapse justify-content-center text-center mt-sm-3" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto" id="unorderList">
+                            <li class="nav-item">
+                                <a routerLink="/" routerLinkActive="active" class="nav-link mr-3">{{'home' | translate}}
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mr-3" href="#service">{{'about' | translate}}</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mr-3 translate" key="page" href="#design">{{'pages' | translate}}</a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="contact" routerLinkActive="active" class="nav-link mr-3">{{'projects' | translate}}</a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="news" routerLinkActive="active" class="nav-link mr-3">{{'blog' | translate}}</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a routerLink="contact" routerLinkActive="active" class="nav-link">{{'contact' | translate}}</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  {{'lang'| translate}}
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <button class="lang d-block" id="en" (click)="setLang('en')">English</button>
+                                    <button class="lang d-block" id="ar" (click)="setLang('ar')">عربى</button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>

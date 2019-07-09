@@ -1,0 +1,11 @@
+@import 'assets/scss/variables';
+@import 'assets/scss/mixins';
+body {
+    background: #fafafa;
+}
+
+p {
+    color: $grey;
+    margin: $auto-margin;
+    @include typoStyle($play, .8rem, 900);
+}

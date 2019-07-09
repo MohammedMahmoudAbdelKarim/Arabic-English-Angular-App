@@ -1,0 +1,27 @@
+@import '../../assets/scss/variables';
+@import '../../assets/scss/mixins';
+#contact {
+    background: $blue;
+    @include typoStyle($play, .8rem, 500);
+    color: $white;
+}
+
+nav {
+    ul {
+        li {
+            a {
+                @extend %link;
+            }
+        }
+    }
+}
+
+.dropdown-menu {
+    button {
+        background: 0;
+        border: 0;
+        outline: 0;
+        @include typoStyle($play, .8rem, 900);
+        color: $blue;
+    }
+}

@@ -1,0 +1,82 @@
+@import '../../assets/scss/variables';
+@import '../../assets/scss/mixins';
+footer {
+    background: $black;
+    h3 {
+        color: $white;
+        @include typoStyle($open, 1.3rem, 900);
+        margin: 0;
+        @include line(0);
+    }
+    #socialMedia {
+        .col {
+            background: #333333;
+            height: 47px;
+            line-height: 47px;
+            color: $white;
+            text-align: center;
+            border-radius: 50%;
+            cursor: pointer;
+            &:hover {
+                background: $grey;
+                color: $black;
+            }
+        }
+    }
+    ul {
+        list-style: none;
+        li {
+            &::before {
+                content: "\00BB";
+                color: $grey;
+                margin: 0 .3rem;
+            }
+            a {
+                @extend %link;
+                color: $grey;
+            }
+        }
+    }
+    .contact {
+        .col-3 {
+            border: 1px solid $grey;
+            height: 50px;
+            line-height: 50px;
+            cursor: pointer;
+            &:hover {
+                background: $grey;
+                i {
+                    color: $black;
+                }
+            }
+            i {
+                color: $grey;
+                font-size: 1.3rem;
+            }
+            border-radius: 20px;
+            -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+            -ms-border-radius: 20px;
+            -o-border-radius: 20px;
+        }
+    }
+    form {
+        .form-control {
+            border: 0;
+            outline: 0;
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+            color: $grey;
+            @include typoStyle($play, .9rem, 900);
+            &::placeholder {
+                color: $grey;
+            }
+        }
+        button {
+            @extend %main-btn;
+        }
+    }
+}

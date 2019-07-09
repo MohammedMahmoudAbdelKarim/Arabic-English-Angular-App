@@ -1,0 +1,311 @@
+<section class="bd-example">
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators d-xl-none d-md-none d-lg-none d-sm-inline-block text-center">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active d-inline-block"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1" class="d-inline-block"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2" class="d-inline-block"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/img/header-1.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-md-block">
+                    <h2>{{'businesstitle'| translate}}</h2>
+                    <p class="d-none d-md-block w-50">{{'businessbody'| translate}}</p>
+                    <button class="mt-xl-5 mt-lg-5 mt-md-3">{{'about'| translate}}</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/header-2.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-md-block">
+                    <h2>{{'lifetitle'| translate}}</h2>
+                    <p class="d-none d-md-block w-50">{{'lifebody'| translate}}</p>
+                    <button class="mt-xl-5 mt-lg-5 mt-md-3" key="about">{{'about'| translate}}</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/header-4.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-md-block">
+                    <h2>{{'conntectiontitle'| translate}}</h2>
+                    <p class="d-none d-md-block w-50">{{'connectionbody'| translate}}</p>
+                    <button class="mt-xl-5 mt-lg-5 mt-md-3" key="about">{{'about'| translate}}</button>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <i class="fas fa-chevron-left"></i>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <i class="fas fa-chevron-right"></i>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</section>
+
+<section id="what-we-offer" class="py-4 mb-5">
+    <div class="container">
+        <div class="container-fluid">
+            <div class="text-head text-center mt-5">
+                <h6>{{'whatWeOffer'| translate }}</h6>
+                <h3>{{'worldClassProducts'| translate}}</h3>
+                <p class="mt-3 w-50">{{'text'| translate}}</p>
+            </div>
+            <owl-carousel [options]="carouselOptions" id="carousel1">
+                <div class="card p-0 mt-5 mx-2">
+                    <div class="card-body p-0">
+                        <img class="img-fluid" src="../../assets/img/offer-1.png" alt="offer-1">
+                        <div class="card-text p-4">
+                            <h4>{{'sensors'| translate}}</h4>
+                            <p>{{'text'| translate}}</p>
+                            <button class="mt-3">{{'readmore'| translate}}</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card p-0 mt-5 mx-2">
+                    <div class="card-body p-0">
+                        <img class="img-fluid" src="../../assets/img/offer-2.png" alt="offer-1">
+                        <div class="card-text p-4">
+                            <h4>{{'monitor'| translate}}</h4>
+                            <p>{{'text'| translate}}</p>
+                            <button class="mt-3">{{'readmore'| translate}}</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card p-0 mt-5 mx-2">
+                    <div class="card-body p-0 ">
+                        <img class="img-fluid " src="../../assets/img/offer-3.png " alt="offer-1 ">
+                        <div class="card-text p-4 ">
+                            <h4>{{'software'| translate}}</h4>
+                            <p>{{'text'| translate}}</p>
+                            <button class="mt-3 ">{{'readmore'| translate}}</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card p-0 mt-5 mx-2">
+                    <div class="card-body p-0">
+                        <img class="img-fluid" src="../../assets/img/offer-4.png" alt="offer-1">
+                        <div class="card-text p-4">
+                            <h4>{{'sensors'| translate}}</h4>
+                            <p>{{'text'| translate}}</p>
+                            <button class="mt-3">{{'readmore'| translate}}</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card p-0 mt-5 mx-2">
+                    <div class="card-body p-0 ">
+                        <img class="img-fluid " src="../../assets/img/offer-5.png " alt="offer-1 ">
+                        <div class="card-text p-4 ">
+                            <h4>{{'monitor'| translate}}</h4>
+                            <p>{{'text'| translate}}</p>
+                            <button class="mt-3 ">{{'readmore'| translate}}</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card p-0 mt-5 mx-2">
+                    <div class="card-body p-0">
+                        <img class="img-fluid" src="../../assets/img/offer-6.png" alt="offer-1">
+                        <div class="card-text p-4">
+                            <h4>{{'software'| translate}}</h4>
+                            <p>{{'text'| translate}}</p>
+                            <button class="mt-3">{{'readmore'| translate}}</button>
+                        </div>
+                    </div>
+                </div>
+            </owl-carousel>
+        </div>
+    </div>
+</section>
+
+<section id="solution" class="py-4">
+    <div class="container">
+        <div class="container-fluid">
+            <div class="row mt-4">
+                <div class="col-lg-6" id="solutionText">
+                    <h5>{{'getintouchpara'| translate}}</h5>
+                    <h3>{{'oneblogtitle'| translate}}</h3>
+                    <p>{{'text'| translate}}</p>
+                    <p>{{'text'| translate}}</p>
+                    <p>{{'text'| translate}}</p>
+                    <button class="mt-4">{{'about'| translate}}</button>
+                </div>
+                <div class="col-lg-6 row">
+                    <div class="col-6">
+                        <div id="cards" class="card p-3 text-center">
+                            <i class="fas fa-clock"></i>
+                            <div class="card-text">
+                                <h6 class="mt-2">{{'events'| translate}}</h6>
+                                <p>{{'getintouchpara'| translate}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div id="cards" class="card p-3 text-center">
+                            <i class="fas fa-clone"></i>
+                            <div class="card-text">
+                                <h6 class="mt-2">{{'bulding'| translate}}</h6>
+                                <p>{{'getintouchpara'| translate}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 mt-3">
+                        <div id="cards" class="card p-3 text-center">
+                            <i class="fas fa-air-freshener"></i>
+                            <div class="card-text">
+                                <h6 class="mt-2">{{'design'| translate}}</h6>
+                                <p>{{'getintouchpara'| translate}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 mt-3">
+                        <div id="cards" class="card p-3 text-center">
+                            <i class="fas fa-user-alt"></i>
+                            <div class="card-text">
+                                <h6 class="mt-2">{{'tips'| translate}}</h6>
+                                <p>{{'getintouchpara'| translate}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="services" class="py-4 mb-5">
+    <div class="container">
+        <div class="container-fluid">
+            <div class="text-head text-center mt-5">
+                <h6>{{'whatWeOffer'| translate }}</h6>
+                <h3>{{'worldClassProducts'| translate}}</h3>
+                <p class="mt-3 w-50">{{'text'| translate}}</p>
+            </div>
+            <owl-carousel [options]="carouselOptions" id="carousel2">
+                <div class="card p-0 mt-5 mx-2">
+                    <div class="card-body p-0">
+                        <img class="img-fluid" src="../../assets/img/s-1.png" alt="offer-1">
+                        <div class="card-text p-4">
+                            <h4>{{'sensors'| translate}}</h4>
+                            <p>{{'text'| translate}}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card p-0 mt-5 mx-2">
+                    <div class="card-body p-0">
+                        <img class="img-fluid" src="../../assets/img/s-2.png" alt="offer-1">
+                        <div class="card-text p-4">
+                            <h4>{{'monitor'| translate}}</h4>
+                            <p>{{'text'| translate}}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card p-0 mt-5 mx-2">
+                    <div class="card-body p-0 ">
+                        <img class="img-fluid " src="../../assets/img/s-3.png " alt="offer-1 ">
+                        <div class="card-text p-4 ">
+                            <h4>{{'software'| translate}}</h4>
+                            <p>{{'text'| translate}}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card p-0 mt-5 mx-2">
+                    <div class="card-body p-0">
+                        <img class="img-fluid" src="../../assets/img/s-4.png" alt="offer-1">
+                        <div class="card-text p-4">
+                            <h4>{{'sensors'| translate}}</h4>
+                            <p>{{'text'| translate}}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card p-0 mt-5 mx-2">
+                    <div class="card-body p-0 ">
+                        <img class="img-fluid " src="../../assets/img/s-5.png " alt="offer-1 ">
+                        <div class="card-text p-4 ">
+                            <h4>{{'monitor'| translate}}</h4>
+                            <p>{{'text'| translate}}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card p-0 mt-5 mx-2">
+                    <div class="card-body p-0">
+                        <img class="img-fluid" src="../../assets/img/s-6.png" alt="offer-1">
+                        <div class="card-text p-4">
+                            <h4>{{'software'| translate}}</h4>
+                            <p>{{'text'| translate}}</p>
+                        </div>
+                    </div>
+                </div>
+            </owl-carousel>
+        </div>
+    </div>
+</section>
+
+<section id="articals" class="py-4">
+    <div class="container">
+        <div class="container-fluid">
+            <div class="text-head text-center mt-5">
+                <h6>{{'whatWeOffer'| translate }}</h6>
+                <h3>{{'worldClassProducts'| translate}}</h3>
+                <p class="mt-3 w-50">{{'text'| translate}}</p>
+            </div>
+            <div class="row" id="blogs">
+                <div class="col-md-4">
+                    <div class="card p-0 mt-5 mx-2">
+                        <div class="card-body p-0">
+                            <div id="date" class="text-center p-4 ml-3 mt-3">
+                                <h5>07</h5>
+                                <hr>
+                                <h6>{{'date'| translate}}</h6>
+                            </div>
+                            <img class="img-fluid" src="../../assets/img/a-1.png" alt="offer-1">
+                            <div class="card-text p-4">
+                                <h4>{{'software'| translate}}</h4>
+                                <i class="fas fa-calendar-alt mx-2"></i>
+                                <span>{{'march'| translate}}</span>
+                                <p class="mt-3">{{'footeraboutus'| translate}}</p>
+                                <button class="mt-3">{{'readmore'| translate}}</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-0 mt-5 mx-2">
+                        <div class="card-body p-0">
+                            <div id="date" class="text-center p-4 ml-3 mt-3">
+                                <h5>07</h5>
+                                <hr>
+                                <h6>{{'date'| translate}}</h6>
+                            </div>
+                            <img class="img-fluid" src="../../assets/img/a-2.png" alt="offer-1">
+                            <div class="card-text p-4">
+                                <h4>{{'software'| translate}}</h4>
+                                <i class="fas fa-calendar-alt mx-2"></i>
+                                <span>{{'march'| translate}}</span>
+                                <p class="mt-3">{{'footeraboutus'| translate}}</p>
+                                <button class="mt-3">{{'readmore'| translate}}</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-0 mt-5 mx-2">
+                        <div class="card-body p-0">
+                            <div id="date" class="text-center p-4 ml-3 mt-3">
+                                <h5>07</h5>
+                                <hr>
+                                <h6>{{'date'| translate}}</h6>
+                            </div>
+                            <img class="img-fluid" src="../../assets/img/a-3.png" alt="offer-1">
+                            <div class="card-text p-4">
+                                <h4>{{'software'| translate}}</h4>
+                                <i class="fas fa-calendar-alt mx-2"></i>
+                                <span>{{'march'| translate}}</span>
+                                <p class="mt-3">{{'footeraboutus'| translate}}</p>
+                                <button class="mt-3">{{'readmore'| translate}}</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

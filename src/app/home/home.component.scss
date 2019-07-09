@@ -1,0 +1,138 @@
+    @import '../../assets/scss/variables';
+    @import '../../assets/scss/mixins';
+    .carousel-caption {
+        bottom: 176px;
+        h2 {
+            font-size: 3rem;
+        }
+        button {
+            @extend %main-btn;
+        }
+    }
+    
+    .text-head {
+        h6 {
+            color: $blue;
+            @include typoStyle($raleway, 1rem, 900);
+            text-transform: uppercase;
+        }
+        h3 {
+            color: $black;
+            @include typoStyle($open, 2rem, 600);
+            @include line($auto-margin);
+        }
+    }
+    
+    #what-we-offer {
+        .card {
+            @extend %card;
+            .card-text {
+                h4 {
+                    @include typoStyle($play, 1.5rem, 900);
+                    &::before {
+                        width: 15px;
+                        height: 15px;
+                        margin: 0 5px;
+                        vertical-align: baseline;
+                        content: "";
+                        background: $blue;
+                        display: inline-block;
+                        border-radius: 50%;
+                        -webkit-border-radius: 50%;
+                        -moz-border-radius: 50%;
+                        -ms-border-radius: 50%;
+                        -o-border-radius: 50%;
+                    }
+                }
+                button {
+                    @extend %secondary-btn;
+                }
+            }
+        }
+    }
+    
+    #solution {
+        @include background-img(url('../../assets/img/blue.jpg'),
+        cover,
+        center);
+        h5 {
+            color: $white;
+            @include typoStyle($raleway,
+            .8rem,
+            900);
+        }
+        h3 {
+            color: $white;
+            @include typoStyle($play,
+            1.6rem,
+            900);
+            @include line(0);
+        }
+        button {
+            @extend %main-btn;
+        }
+        #cards {
+            i {
+                color: $blue;
+                font-size: 4rem;
+            }
+            h6 {
+                @include typoStyle($play,
+                1rem,
+                900);
+            }
+        }
+    }
+    
+    #services {
+        .card {
+            @extend %card;
+            .card-text {
+                h4 {
+                    @include typoStyle($play,
+                    1.5rem,
+                    900);
+                }
+            }
+        }
+    }
+    
+    #articals {
+        background: #F9F9F9;
+        .card {
+            @extend %card;
+            .card-text {
+                h4 {
+                    @include typoStyle($play,
+                    1.5rem,
+                    900);
+                }
+                button {
+                    @extend %main-btn;
+                }
+            }
+        }
+        #date {
+            position: absolute;
+            top: 0%;
+            z-index: 2;
+            background: $blue;
+            color: $white;
+            @include typoStyle($play,
+            .8rem,
+            900);
+            hr {
+                border-color: $white;
+            }
+        }
+        .fa-calendar-alt {
+            color: #D10000;
+            font-size: 1rem;
+        }
+        span {
+            @include typoStyle($play,
+            .8rem,
+            900);
+            color: $grey;
+        }
+    }
